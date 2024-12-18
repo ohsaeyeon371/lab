@@ -1,0 +1,22 @@
+.apple-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff; /* 배경색 */
+    color: #333; /* 텍스트 색 */
+  }
+  
+  .apple-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .apple-image {
+    max-width: 80%; /* 이미지 크기 조정 */
+    height: auto;
+    border-radius: 8px; /* 이미지 모서리를 둥글게 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  }
+  

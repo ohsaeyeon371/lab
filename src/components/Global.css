@@ -1,0 +1,35 @@
+/* 공통 레이아웃 스타일 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .app-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .content-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+  }
+  
+  /* 페이지 공통 스타일 */
+  .page-content {
+    text-align: center;
+  }
+  
+  .page-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .content-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  

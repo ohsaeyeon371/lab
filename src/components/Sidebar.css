@@ -1,0 +1,89 @@
+/* 전체 레이아웃 */
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #f9f9f9, #eaeaea); /* 배경에 그라데이션 추가 */
+}
+
+/* 사이드바 스타일 */
+.sidebar {
+  width: 250px;
+  background: linear-gradient(to bottom, #333, #555); /* 그라데이션 배경 추가 */
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+  transition: all 0.3s ease-in-out; /* 애니메이션 추가 */
+}
+
+.sidebar:hover {
+  background: linear-gradient(to bottom, #444, #666); /* 호버 시 배경색 변경 */
+}
+
+.sidebar h3 {
+  color: #ff6f61; /* 제목 강조 색상 */
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px; /* 항목 간 간격 추가 */
+  padding: 20px 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  text-align: center; /* 중앙 정렬 */
+  width: 100%; /* 항목 크기 고정 */
+}
+
+/* 링크 스타일 */
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px; /* 둥근 버튼 스타일 */
+  transition: all 0.3s ease; /* 부드러운 애니메이션 추가 */
+  outline: none; /* 클릭된 선 제거 */
+}
+
+.link:focus {
+  outline: none; /* 포커스 시에도 선 제거 */
+}
+
+.link:visited {
+  color: rgb(106, 131, 60); /* 방문한 링크 색상 */
+}
+
+.link:hover {
+  color: white;
+  background-color: #ff6f61; /* 호버 시 배경 강조 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+  transform: translateY(-3px); /* 호버 시 위로 이동 */
+}
+
+/* 메인 컨텐츠 스타일 */
+.content {
+  flex: 1;
+  padding: 30px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-y: auto; /* 컨텐츠가 많을 경우 스크롤 추가 */
+  border-left: 1px solid #ddd; /* 사이드바와의 구분선 */
+}
